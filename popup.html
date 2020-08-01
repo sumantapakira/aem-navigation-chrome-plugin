@@ -1,0 +1,159 @@
+<!--
+  Copyright 2020 Sumanta Pakira
+   All Rights Reserved.
+
+  NOTICE:  All information contained herein is, and remains
+  the property of Adobe Systems Incorporated and its suppliers,
+  if any.  The intellectual and technical concepts contained
+  herein are proprietary to Adobe Systems Incorporated and its
+  suppliers and are protected by trade secret or copyright law.
+  Dissemination of this information or reproduction of this material
+  is strictly forbidden unless prior written permission is obtained
+  from Adobe Systems Incorporated.
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Zeiss AEM Navigator</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+    <style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+      
+        .logo-icon {
+            vertical-align: text-bottom;
+            margin-right: 12px;
+        }
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+    </style>
+
+</head>
+
+<body>
+    
+
+    <div class="main">
+     
+      <h2 class="logo"> <img class="logo-icon" src="images/aemlogo.png" /> AEM Navigator
+      </h2>
+     <div class="row">
+          <div class="column">
+            <div class="content">
+                <a id="crxde" href="#" target="_blank">
+                    <img src="/images/crxde.png" alt="Crxde " style="width:100%">
+                    <h3>CRX DE</h3>
+                </a>    
+             </div>
+          </div>
+          <div class="column">
+            <div class="content">
+                <a id="webconsole" href="#" target="_blank">
+                    <img src="/images/webconsole.png" alt="System Console " style="width:100%">
+                    <h3>System console</h3>
+                </a>    
+             </div>
+
+          </div>
+     </div>
+     <div class="row">     
+          <div class="column">
+            <div class="content">
+                <a id="classicSwitch" href="#" target="_blank">
+                  <img src="/images/classicui.png" alt="Classic UI" style="width:100%">
+                  <h3>Touch to Classic switch</h3>
+                </a>
+             </div>
+          </div>
+          <div class="column">
+            <div class="content">
+                <a id="touchSwitch" href="#" target="_blank">
+                    <img src="/images/touchui.jpg" alt="Touch UI " style="width:100%">
+                    <h3>Classic to Touch switch</h3>
+                </a>    
+             </div>
+          </div>
+          <div class="column">
+            <div class="content">
+                <a id="contenttree" href="#" target="_blank">
+                    <img src="/images/contenttree.png" alt="Content Tree " style="width:100%">
+                    <h3>Touch UI Content Tree</h3>
+                </a>    
+             </div>
+          </div>
+          <div class="column">
+            <div class="content">
+                <a id="contactus" href="mailto: sumanta.pakira@zeiss.com" target="_blank">
+                    <img src="/images/contactus.png" alt="Contact us " style="width:100%">
+                    <h3>Contact</h3>
+                </a>    
+             </div>
+          </div>
+        </div>
+   </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

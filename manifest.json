@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "AEM Navigator",
+  "description": "AME Navigation for different interface",
+  "version": "1.0.0",
+  "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+  "content_scripts": [
+  {
+    "matches": [
+      "<all_urls>"
+    ],
+    "js": ["content.js"]
+  }
+],
+
+  "icons": { "128": "icon_128.png" },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab"]
+}
